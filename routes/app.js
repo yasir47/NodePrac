@@ -2,9 +2,9 @@ var express = require('express');
 
 var router = express.Router();
 
-var indexController = require('../controller/index');
-var leaderController = require('../controller/leaderRouter');
-var promoController = require('../controller/promoRouter')
+var indexController = require('../routes/index');
+var leaderController = require('../routes/leaderRouter');
+var promoController = require('../routes/promoRouter')
 
 indexController(router);
 leaderController(router);
